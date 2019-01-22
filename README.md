@@ -7,7 +7,7 @@ Then clone this project:
 ```sh
 git clone https://github.com/romi1502/genre_classification_ensea_project.git
 ```
-Then change dire to the directory of the repo and build the image :
+Then change to the directory of the repo and build the image :
 ```sh
 cd genre_classification_ensea_project
 docker build -t genre_classification_image docker
