@@ -1,4 +1,3 @@
-
 # Template code for the genre classification project of ENSEA course "Electronique et Signal Musical".
 
 ## Setup
@@ -31,7 +30,7 @@ The code is based on [Tensorflow](https://www.tensorflow.org/)  which is a very 
 * `keras_model.py`contains the description of the neural network model that will be trained. For now it is a very basic fully connected one-layer network, but you'll have to enhance it.
 * `train_model.py` is the script that run model training. Once again it is very basic, and you'll have to enhance it.
 * `utils.py`contains some utility functions that are used by the `data_pipeline.py` module
-* `fma_small.csv`
+* `fma_small.csv` contains information about the dataset: filename and genre for each music excerpt.
 
 
 ## Docker tips
