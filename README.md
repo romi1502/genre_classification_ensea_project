@@ -1,3 +1,4 @@
+
 # Template code for the genre classification project of ENSEA course "Electronique et Signal Musical".
 
 ## Setup
@@ -23,6 +24,15 @@ Once in the container, you should be able to run the basic provided training scr
 python train_model.py
 ```
 All used data and dependencies are self contained in the docker image.
+
+## Code details
+The code is based on [Tensorflow](https://www.tensorflow.org/)  which is a very versatile and widely used machine learning framework. It especially makes  use of the [Tensorflow dataset API](https://www.tensorflow.org/guide/datasets) for data preprocessing and of [Keras](https://www.tensorflow.org/guide/keras) for Neural Network creation and training.
+* `data_pipeline.py` contains all data preprocessing: audio loading, features computation from audio, label formatting... For now it actually provides as features only a piece of the waveform, but you'll have to enhance it.
+* `keras_model.py`contains the description of the neural network model that will be trained. For now it is a very basic fully connected one-layer network, but you'll have to enhance it.
+* `train_model.py` is the script that run model training. Once again it is very basic, and you'll have to enhance it.
+* `utils.py`contains some utility functions that are used by the `data_pipeline.py` module
+* `fma_small.csv`
+
 
 ## Docker tips
 
