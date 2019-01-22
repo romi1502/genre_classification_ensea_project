@@ -2,7 +2,7 @@
 # Template code for the genre classification project of ENSEA course "Electronique et Signal Musical".
 
 ## Setup
-The easiest way to run the provided code is to build the provided Dockerfile using Docker. The provided image contains all 
+The easiest way to run the code in this repository is to build the provided Dockerfile using Docker. The provided image contains all 
 First, you need to install [Docker](https://docs.docker.com/install/).
 Then clone this project:
 ```sh
@@ -36,11 +36,11 @@ The code is based on [Tensorflow](https://www.tensorflow.org/)  which is a very 
 
 ## Docker tips
 
-If you want to edit code in your favorite code editor and make accessible within the docker container, you can mount a path of your computer filesystem within the docker filesystem when launching your container using the `-v`option:
+If you want to edit code in your favorite code editor and make it accessible within the docker container, you can mount a path of your computer filesystem within the docker filesystem when launching your container using the `-v`option:
 ```sh
 docker run -ti --rm --name genre_classification_container -v /my/local/path/:/path/in/docker/container genre_classification_image
 ```
-Then you should be able to access files located on your computer at `/my/local/path/` within the container at path `/path/in/docker/container`
+Then you should be able to access files located on your computer at `/my/local/path/` within the container at path `/path/in/docker/container`.
 
 
 You can let run a script within your docker container and check it afterwards:
