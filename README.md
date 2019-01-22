@@ -1,8 +1,8 @@
-# This repository is the template code for the genre classification project of ENSEA course "Electronique et Signal Musical".
+# Template code for the genre classification project of ENSEA course "Electronique et Signal Musical".
 
 ## Setup
 The easiest way to run the provided code is to build the provided Dockerfile using Docker. 
-You should first install [Docker](https://docs.docker.com/install/).
+First, you need to install [Docker](https://docs.docker.com/install/).
 Then clone this project:
 ```sh
 git clone https://github.com/romi1502/genre_classification_ensea_project.git
